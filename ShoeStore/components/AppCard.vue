@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div v-if="order_comp == true"><OrderComplete /></div>
     <div id="app">
       <div v-if="cartUIStatus === 'idle'" class="payment">
         <h3>Please enter your payment details:</h3>
@@ -93,7 +92,6 @@
 
 <script>
 import { Card, handleCardPayment } from "vue-stripe-elements-plus";
-import { OrderComplete } from "./OrderComplete/OrderComplete";
 import { mapState } from "vuex";
 
 export default {
@@ -107,7 +105,6 @@ export default {
   },
   data() {
     return {
-      order_comp: false,
       complete: false,
       stripeOptions: {
         // you can configure that cc element. I liked the default, but you can
