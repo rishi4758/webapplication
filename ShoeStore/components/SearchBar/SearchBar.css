@@ -1,0 +1,48 @@
+.form {
+  position: relative;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-top: 20px;
+  width: 500px;
+}
+
+.myButton {
+  display: inline;
+  position: relative;
+  left: 5px;
+  cursor: pointer;
+}
+.form-control {
+  width: 400px;
+  display: inline;
+  outline: none;
+  border: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.myList {
+  background-color: #000;
+  opacity: 0.9;
+}
+.listValue {
+  color: aliceblue;
+  text-decoration: none;
+}
+.oneValue {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #fff;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+.oneValue:hover {
+  background-color: rgb(218, 142, 1);
+  color: rgb(218, 142, 1);
+}
+@media (max-width: 576px) {
+  .form-control {
+    width: 70%;
+  }
+}
